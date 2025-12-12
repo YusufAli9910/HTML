@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms</title>
+</head>
+<body>
+    <table border="1">
+
+        <!-- border = cizgi ile tablo gibi seyler yapar -->
+        
+
+        <!-- table head-->
+        <thead>
+            <!-- table header -->
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Age</th>
+        </thead>
+
+
+
+        <!-- table row-->
+        <tr>
+            <!-- table data -->
+            <td>Max</td>
+            <td>10 million</td>
+            <td>f1</td>
+            <td>27</td>
+        </tr>
+
+        <tr>
+            <td>Lewis</td>
+            <td>30 million</td>
+            <td>f1</td>
+            <td>35</td>
+        </tr>
+
+    </table>
+
+    <br><br><br>
+
+
+
+    <!-- form egerki action istiyorsan kullanilir -->
+
+    <!-- lable normal bir paragraf gibi degil icine for gibi seyler verip islevini 
+    degistirebiliriz -->
+
+    <!-- name=   key, value degeri olusturur ve o girilen ismin verisini toplar 
+    ve linkte yazi gosterir . -->
+
+    <form action="imagesAndLinks.html">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+        <br>
+        <label for="Salary">Salary:</label>
+        <input type="text" id="salary" name="user_salary">  
+        <br>
+        <input type="submit">   
+    </form>
+
+
+    <br><br><br>
+
+
+    <form action="htmlbasics.html">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">  
+        <br>
+        <input type="submit" value="Login">   
+    </form>
+
+
+    <br><br><br>
+
+
+    <form action="divspanhtml.html">
+        <p>F1 or LeMans</p>
+        <label for="F1">F1:</label>
+        <input type="radio" id="F1" name="Racing" value="F1">
+        <br>
+        <label for="LeMans">LeMans:</label>
+        <input type="radio" id="LeMans" name="Racing" value="LeMans">  
+        <br>
+        <input type="submit" value="Choose">   
+    </form>
+
+
+
+    <br><br><br>
+
+
+    <form action="htmllist.html">
+        <p>Rate your driver.</p>
+        <select name="Rating" id="Rating1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+        </select>
+        <br>
+        <input type="submit" value="Choose">
+    </form>
+
+
+
+
+</body>
+</html>
