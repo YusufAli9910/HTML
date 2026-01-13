@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family:Pacifico;
+}
+
+p{
+    color: lightgray;
+    font-size: large;
+    text-align: center;
+}
+/* font sizeı px, large vs , em birimi ve yüzdelik ile verebiliriz */
+
+
+
+#ali{
+    border: 6px dashed red;
+    padding-top: 50px;
+    margin: 20px;
+    
+}
+
+#okcu{
+    border: 6px dotted blue;
+    margin-top: 60px;
+}
+
+/* padding iç sınırları belirler ve genişletebilirsin ---   margin ise dış sınırları belirler ve onuda genişletebilirsin */
+
