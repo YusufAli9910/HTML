@@ -1,0 +1,138 @@
+/* Genel Sıfırlama */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Sayfa Konteynırları */
+#main-page, #image-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Üst Menü (Navigasyon) */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px; /* Yüksekliği sabitleyerek logonun üzerine binmesini önler */
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #3c4043;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    color: #5f6368;
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 9px 23px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Ana İçerik (Logo ve Arama Çubuğu) */
+.main-content {
+    flex: 1; /* Ekranın kalan boşluğunu doldurur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Her şeyi dikeyde tam ortalar */
+    margin-top: -80px; /* Logoyu bir miktar yukarı çekerek Google estetiği sağlar */
+}
+
+.logo {
+    width: 272px;
+    margin-bottom: 25px;
+}
+
+/* Form Düzeni */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Arama Kutusu */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 8px 15px;
+    width: 90%;
+    max-width: 584px;
+    transition: box-shadow 0.2s;
+}
+
+.search-box:hover, .search-box:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.search-icon, .micro-icon, .camera-icon {
+    color: #9aa0a6;
+    font-size: 16px;
+}
+
+/* Butonlar */
+.button-group {
+    margin-top: 25px;
+}
+
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Görsel Sayfası Özel Tasarımı */
+.image-logo-container {
+    position: relative;
+    display: inline-block;
+}
+

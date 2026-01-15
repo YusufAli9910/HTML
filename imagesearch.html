@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Görseller</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="logo-wrapper">
+            <a href="search.html">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="google-logo">
+            </a>
+            <span class="images-label">görseller</span>
+        </div>
+        
+        <form action="https://www.google.com/search" method="GET">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" name="q" class="search-input" placeholder="Görsel ara" autofocus>
+                <input type="hidden" name="tbm" value="isch">
+                <i class="fas fa-camera camera-icon"></i>
+            </div>
+            
+            <button type="submit" class="image-search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </main>
+</body>
+</html>

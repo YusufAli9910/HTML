@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Üst Menü */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.apps-icon {
+    color: #5f6368;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.apps-icon:hover {
+    background-color: #f1f3f4;
+    border-radius: 50%;
+}
+
+.signin-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 9px 23px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #1765cc;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Ana İçerik */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.google-logo {
+    width: 272px;
+    margin-bottom: 30px;
+}
+
+/* Görsel sayfası logo */
+.logo-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.images-label {
+    position: absolute;
+    bottom: 5px;
+    right: -70px;
+    color: #4285f4;
+    font-size: 16px;
+}
+
+/* Arama Kutusu */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    width: 584px;
+    max-width: 90vw;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.search-wrapper:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-wrapper:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-wrapper i {
+    color: #9aa0a6;
+    font-size: 18px;
+}
+
+.mic-icon,
+.camera-icon {
+    cursor: pointer;
+}
+
+.mic-icon:hover,
+.camera-icon:hover {
+    opacity: 0.7;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 15px;
+    background: transparent;
+}
+
+/* Butonlar */
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+}
+
+/* Görsel arama butonu */
+.image-search-btn {
+    background: transparent;
+    border: none;
+    color: #4285f4;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.image-search-btn:hover {
+    opacity: 0.8;
+}

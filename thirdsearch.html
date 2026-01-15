@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="third.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="main-page">
+        <nav class="top-nav">
+            <a href="#">Gmail</a>
+            <a href="javascript:void(0)" onclick="switchToImages()">Görseller</a> 
+            <i class="fas fa-th menu-icon"></i>
+            <button class="sign-in">Oturum Açın</button>
+        </nav>
+
+        <div class="main-content">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+            <form action="https://www.google.com/search" method="GET">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="q" class="search-input" autofocus required>
+                    <i class="fas fa-microphone micro-icon"></i>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn">Google'da Ara</button>
+                    <button type="submit" name="btnI" class="btn">Kendimi Şanslı Hissediyorum</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="image-page" style="display: none;">
+        <div class="main-content">
+            <div class="image-logo-container">
+                <a href="javascript:void(0)" onclick="switchToMain()">
+                    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+                </a>
+                <span class="image-text">görseller</span>
+            </div>
+            <form action="https://www.google.com/search" method="GET">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="q" class="search-input" placeholder="Görsel ara" required>
+                    <input type="hidden" name="tbm" value="isch">
+                    <i class="fas fa-camera camera-icon"></i>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn-image-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Görsellere Geçiş
+        function switchToImages() {
+            document.getElementById('main-page').style.display = 'none';
+            document.getElementById('image-page').style.display = 'flex';
+            document.title = "Google Görseller";
+        }
+
+        // Ana Sayfaya Dönüş
+        function switchToMain() {
+            document.getElementById('image-page').style.display = 'none';
+            document.getElementById('main-page').style.display = 'block';
+            document.title = "Google";
+        }
+    </script>
+
+
+</body>
+</html>

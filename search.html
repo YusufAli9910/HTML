@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Gmail</a>
+        <a href="imagesearch.html" target="_blank">Görseller</a>
+        <i class="fas fa-th apps-icon"></i>
+        <button class="signin-btn">Oturum Açın</button>
+    </nav>
+
+    <main class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="google-logo">
+        
+        <form action="https://www.google.com/search" method="GET">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" name="q" class="search-input" autofocus>
+                <i class="fas fa-microphone mic-icon"></i>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" class="search-btn">Google'da Ara</button>
+                <button type="submit" name="btnI" class="search-btn">Kendimi Şanslı Hissediyorum</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
